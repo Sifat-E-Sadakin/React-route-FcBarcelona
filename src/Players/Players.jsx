@@ -9,7 +9,7 @@ const Players = () => {
 
     return (
         <div className=''>
-            <h2>List of players</h2>
+            <h2 className='text-2xl m-5'>List of players</h2>
             <div className='grid md:grid-cols-3 gap-5'>
             {
                 players.map(player=> <ShowPlayers player={player} key={player.idPlayer}></ShowPlayers> )

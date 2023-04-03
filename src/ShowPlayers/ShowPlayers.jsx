@@ -9,9 +9,9 @@ const ShowPlayers = (props) => {
     return (
         <div className='border bg-blue-900 '>
             <img src={strCutout} alt="" />
-            <h2>{strPlayer}</h2>
-            <button className='btn-sm btn' ><Link to={`/info/${idPlayer}`}>See Details</Link></button>
-            <button className='btn-sm btn' ><Link to={`/Achievements/${idPlayer}`}>See Achievements</Link></button>
+            <h2 className='p-3 text-2xl font-semibold' >{strPlayer}</h2>
+            <button className='btn-sm btn m-1' ><Link to={`/info/${idPlayer}`}>See Details</Link></button>
+            <button className='btn-sm btn m-1' ><Link to={`/Achievements/${idPlayer}`}>See Achievements</Link></button>
         </div>
     );
 };
